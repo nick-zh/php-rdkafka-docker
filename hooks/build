@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+printenv
 export LIBRDKAFKA_VERSION=0.11.6-r0
 export EXT_RDKAFKA_VERSION=3.0.5
 docker build --build-arg LIBRDKAFKA_VERSION=$LIBRDKAFKA_VERSION --build-arg EXT_RDKAFKA_VERSION=$EXT_RDKAFKA_VERSION -t nickzurich/php-rdkafka:$CACHE_TAG .
