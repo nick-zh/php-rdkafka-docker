@@ -6,6 +6,8 @@ ARG EXT_RDKAFKA_VERSION
 RUN apk add autoconf gcc g++ librdkafka=$LIBRDKAFKA_VERSION librdkafka-dev=$LIBRDKAFKA_VERSION make \
     --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community
 
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+
 RUN pecl channel-update pecl.php.net && \
     pecl install rdkafka-$EXT_RDKAFKA_VERSION && \
     docker-php-ext-enable rdkafka

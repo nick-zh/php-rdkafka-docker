@@ -1,11 +1,9 @@
-# php-rdkafka-docker
+# Supported tags and respective `Dockerfile` links
+[`latest`, `72-fpm-alpine3.8-lib-0.11.6-r0-ext-3.0.5-composer` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/72-fpm-alpine3.8-lib-0.11.6-r0-ext-3.0.5-composer/Dockerfile "Dockerfile")
+[`72-fpm-alpine3.8-lib-0.11.6-r0-ext-3.0.5` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/72-fpm-alpine3.8-lib-0.11.6-r0-ext-3.0.5/Dockerfile "Dockerfile")
 
-## Description
-PHP docker image with librdkafka and ext-rdkafka preinstalled.
-The image is built with php:7.2-fpm-alpine3.8 as base and the
-newest librdkafka release (0.11.6 at the time)
 
-## Build it yourself
+# Build it yourself
 ```
 docker build . --build-arg LIBRDKAFKA_VERSION=<version> --build-arg EXT_RDKAFKA_VERSION=<version> -t <tag>
 ```
