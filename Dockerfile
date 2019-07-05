@@ -1,4 +1,4 @@
-FROM php:7.2-fpm-alpine3.8
+FROM php:7.3-fpm-alpine3.10
 
 ARG LIBRDKAFKA_VERSION
 ARG EXT_RDKAFKA_VERSION

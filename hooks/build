@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 printenv
-export LIBRDKAFKA_VERSION=0.11.6-r0
-export EXT_RDKAFKA_VERSION=3.0.5
+export LIBRDKAFKA_VERSION=1.1.0-r0
+export EXT_RDKAFKA_VERSION=3.1.1
 export DOCKER_REPO=index.docker.io/nickzurich/php-rdkafka
 docker build --build-arg LIBRDKAFKA_VERSION=$LIBRDKAFKA_VERSION --build-arg EXT_RDKAFKA_VERSION=$EXT_RDKAFKA_VERSION -t $IMAGE_NAME .
