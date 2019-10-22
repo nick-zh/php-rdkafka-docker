@@ -1,5 +1,9 @@
 # Supported tags and respective `Dockerfile` links
-[`latest`, `73-fpm-alpine3.10-lib-1.1.0-r0-ext-3.1.1-composer` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/73-fpm-alpine3.10-lib-1.1.0-r0-ext-3.1.1-composer/Dockerfile "Dockerfile")
+[`latest`, `73-fpm-alpine3.10-lib-1.2.0-r0-ext-4.0.0-composer` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/73-fpm-alpine3.10-lib-1.2.0-r0-ext-4.0.0-composer/Dockerfile "Dockerfile")
+
+[`73-fpm-alpine3.10-lib-1.2.0-r0-ext-3.1.2-composer` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/73-fpm-alpine3.10-lib-1.2.0-r0-ext-3.1.2-composer/Dockerfile "Dockerfile")
+
+[`73-fpm-alpine3.10-lib-1.1.0-r0-ext-3.1.1-composer` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/73-fpm-alpine3.10-lib-1.1.0-r0-ext-3.1.1-composer/Dockerfile "Dockerfile")
 
 [`72-fpm-alpine3.8-lib-1.1.0-r0-ext-3.1.1` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/73-fpm-alpine3.10-lib-1.1.0-r0-ext-3.1.1/Dockerfile "Dockerfile")
 
