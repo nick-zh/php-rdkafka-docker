@@ -13,8 +13,6 @@ RUN git clone --depth 1 --branch v$LIBRDKAFKA_VERSION https://github.com/edenhil
     && make \
     && make install
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
-
 RUN pecl channel-update pecl.php.net \
     && pecl install rdkafka-$EXT_RDKAFKA_VERSION \
     && docker-php-ext-enable rdkafka \
