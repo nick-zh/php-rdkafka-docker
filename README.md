@@ -27,5 +27,5 @@
 
 # Build it yourself
 ```
-docker build . --build-arg LIBRDKAFKA_VERSION=<version> --build-arg EXT_RDKAFKA_VERSION=<version> -t <tag>
+docker build . --build-arg PHP_IMAGE_TAG=<tag> --build-arg LIBRDKAFKA_VERSION=<version> --build-arg EXT_RDKAFKA_VERSION=<version> --build-arg INSTALL_COMPOSER={yes|no} -t <tag>
 ```
