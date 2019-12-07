@@ -1,7 +1,11 @@
-FROM php:7.3-fpm-alpine3.10
+ARG PHP_IMAGE_TAG
+
+FROM php:$PHP_IMAGE_TAG
 
 ARG LIBRDKAFKA_VERSION
 ARG EXT_RDKAFKA_VERSION
+ARG INSTALL_COMPOSER
+ENV INSTALL_COMPOSER=$INSTALL_COMPOSER
 ENV BUILD_DEPS 'autoconf git gcc g++ make bash'
 
 RUN apk --no-cache upgrade \
@@ -13,7 +17,9 @@ RUN git clone --depth 1 --branch v$LIBRDKAFKA_VERSION https://github.com/edenhil
     && make \
     && make install
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+RUN if [ $INSTALL_COMPOSER = "yes" ]; then \
+        curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer; \
+    fi;
 
 RUN pecl channel-update pecl.php.net \
     && pecl install rdkafka-$EXT_RDKAFKA_VERSION \

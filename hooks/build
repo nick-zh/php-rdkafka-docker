@@ -1,6 +1,13 @@
 #!/usr/bin/env sh
 printenv
-export LIBRDKAFKA_VERSION=1.2.1
+export PHP_IMAGE_TAG=7.4-fpm-alpine
+export LIBRDKAFKA_VERSION=1.3.0
 export EXT_RDKAFKA_VERSION=4.0.0
+export INSTALL_COMPOSER=yes
 export DOCKER_REPO=index.docker.io/nickzurich/php-rdkafka
-docker build --build-arg LIBRDKAFKA_VERSION=$LIBRDKAFKA_VERSION --build-arg EXT_RDKAFKA_VERSION=$EXT_RDKAFKA_VERSION -t $IMAGE_NAME .
+docker build \
+    --build-arg PHP_IMAGE_TAG=$PHP_IMAGE_TAG \
+    --build-arg LIBRDKAFKA_VERSION=$LIBRDKAFKA_VERSION \
+    --build-arg EXT_RDKAFKA_VERSION=$EXT_RDKAFKA_VERSION \
+    --build-arg INSTALL_COMPOSER=$INSTALL_COMPOSER \
+    -t $IMAGE_NAME .
