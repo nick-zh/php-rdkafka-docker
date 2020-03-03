@@ -3,7 +3,7 @@ printenv
 export PHP_IMAGE_TAG=7.4-cli-alpine3.11
 export LIBRDKAFKA_VERSION=1.3.0
 export EXT_RDKAFKA_VERSION=4.0.2
-export INSTALL_COMPOSER=no
+export INSTALL_COMPOSER=yes
 export DOCKER_REPO=index.docker.io/nickzurich/php-rdkafka
 docker build \
     --build-arg PHP_IMAGE_TAG=$PHP_IMAGE_TAG \
