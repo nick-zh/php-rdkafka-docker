@@ -6,7 +6,7 @@ ARG LIBRDKAFKA_VERSION
 ARG EXT_RDKAFKA_VERSION
 ARG INSTALL_COMPOSER
 ENV INSTALL_COMPOSER=$INSTALL_COMPOSER
-ENV BUILD_DEPS 'autoconf git gcc g++ make bash'
+ENV BUILD_DEPS 'autoconf git gcc g++ make bash openssl'
 
 RUN apk --no-cache upgrade \
     && apk add $BUILD_DEPS
