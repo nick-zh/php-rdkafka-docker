@@ -1,5 +1,9 @@
 # Supported tags and respective `Dockerfile` links
-[`latest`, `74-fpm-alpine-lib-1.5.0-ext-4.0.3-composer` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/74-fpm-alpine3.12-lib-1.5.0-ext-4.0.3-composer/Dockerfile "Dockerfile")  
+[`latest`, `74-fpm-alpine-lib-1.5.0-ext-4.0.4-composer` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/74-fpm-alpine3.12-lib-1.5.0-ext-4.0.4-composer/Dockerfile "Dockerfile")  
+[`74-fpm-alpine-lib-1.5.0-ext-4.0.4` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/74-fpm-alpine3.12-lib-1.5.0-ext-4.0.4/Dockerfile "Dockerfile")  
+[`74-cli-alpine-lib-1.5.0-ext-4.0.4-composer` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/74-cli-alpine3.12-lib-1.5.0-ext-4.0.4-composer/Dockerfile "Dockerfile")  
+[`74-cli-alpine-lib-1.5.0-ext-4.0.4` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/74-cli-alpine3.12-lib-1.5.0-ext-4.0.4/Dockerfile "Dockerfile")  
+[`74-fpm-alpine-lib-1.5.0-ext-4.0.3-composer` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/74-fpm-alpine3.12-lib-1.5.0-ext-4.0.3-composer/Dockerfile "Dockerfile")  
 [`74-fpm-alpine-lib-1.5.0-ext-4.0.3` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/74-fpm-alpine3.12-lib-1.5.0-ext-4.0.3/Dockerfile "Dockerfile")  
 [`74-cli-alpine-lib-1.5.0-ext-4.0.3-composer` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/74-cli-alpine3.12-lib-1.5.0-ext-4.0.3-composer/Dockerfile "Dockerfile")  
 [`74-cli-alpine-lib-1.5.0-ext-4.0.3` (Dockerfile)](https://github.com/nick-zh/php-rdkafka-docker/blob/74-cli-alpine3.12-lib-1.5.0-ext-4.0.3/Dockerfile "Dockerfile")  
